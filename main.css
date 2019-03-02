@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    color: white;
+}
+
+#container{
+    display: grid;
+    row-gap: 1rem;
+    /* height: 100vh; */
+    /* grid-template-columns: 1fr 250px 250px 1fr;  */
+    grid-template-areas: 
+        "mars       mars        mars"
+        "oMarsu     slika        izazovi"
+        "galerija   slika        oNama"
+        "prijaviSe  prijaviSe    prijaviSe" ;
+   
+    /* grid-template-columns: repeat(auto-fit, minmax(350px,1fr)); */
+ }
+
+ #mars {
+    padding-top: 2rem; 
+    grid-area: mars;
+    min-width: 300px;
+    letter-spacing: 3rem;
+    margin-right: -3rem;
+    justify-self: center;
+    align-self: center;
+    font-size: 7rem;
+    opacity: 0;
+    animation: mars 10s 7s forwards;	
+   
+}
+.link{
+    font-size: 2rem;
+    align-self: center;
+    opacity: 0;
+}
+
+.oMarsu {
+    grid-area: oMarsu;
+    justify-self: right;
+    animation: mars 10s 1s forwards;	
+}
+
+.galerija {
+    grid-area: galerija;
+    justify-self: right;
+    animation: mars 10s 2s forwards;	
+}
+.izazovi {
+    grid-area: izazovi;
+    justify-self: left;
+    animation: mars 10s 5s forwards;	
+}
+.oNama {
+    grid-area: oNama;
+    justify-self: left;
+    animation: mars 10s 4s forwards;	
+}
+.prijaviSe {
+    grid-area: prijaviSe;
+    padding-top: 2rem;
+    justify-self: center;
+    animation: mars 10s 3s forwards;	
+}
+@keyframes mars {
+    0%   {opacity:0}
+    100%  {opacity: 1}
+}
+
+#slika {
+    grid-area: slika;
+    max-width: 50%;
+    /* height: auto; */
+    justify-self: center;
+    align-self: center;
+    opacity: 0;
+    animation: mars 10s 6s forwards;	   
+}
+.stars, .twinkling{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+}
+  
+.stars {
+    background: black url(img/stars.png);
+    z-index:-2;
+}
+  
+.twinkling{
+    background: url(img/twinkling.png);
+    z-index:-1;
+    animation: treptanje 300s linear;
+}
+/* @keyframes treptanje {
+      0% {background-position:0 0;}
+      100% {background-position:-5000px 1000px;}
+  } */
+img{
+    transition: transform 2s ease-in-out;
+}  
+img:hover {
+    transform: rotate(360deg);
+}
+
+@media (max-width: 700px){
+    #container {
+        grid-template-areas: 
+        "mars"
+        "slika"
+        "oMarsu"
+        "galerija"
+        "izazovi"
+        "oNama"
+        "prijaviSe"  ;     
+    }
+    .link  {
+        justify-self: center;
+        align-items: center;
+    } 
+    #slika {
+        max-width: 40%;
+        margin:auto;
+    }
+  
+}
+  

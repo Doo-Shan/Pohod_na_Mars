@@ -21,25 +21,35 @@ body{
     padding-top: 2rem; 
     grid-area: mars;
     min-width: 300px;
-    letter-spacing: 3rem;
-    margin-right: -3rem;
+    letter-spacing: 1rem;
+    margin-right: -1rem;
     justify-self: center;
     align-self: center;
-    font-size: 7rem;
+    font-size: 6rem;
     opacity: 0;
-    animation: mars 10s 7s forwards;	
+    animation: mars 10s 0.5s forwards;	
    
 }
-.link{
+a:link, a:visited {
     font-size: 2rem;
-    align-self: center;
+    color: rgba(255, 255, 255, 0.534);
+    text-decoration: none;
+}
+  
+a:hover, a:active {
+    color:white;
+}
+
+.linkovi {
     opacity: 0;
+    align-self: center;
+
 }
 
 .oMarsu {
     grid-area: oMarsu;
     justify-self: right;
-    animation: mars 10s 1s forwards;	
+    animation: mars 10s 1.5s forwards;	
 }
 
 .galerija {
@@ -50,18 +60,18 @@ body{
 .izazovi {
     grid-area: izazovi;
     justify-self: left;
-    animation: mars 10s 5s forwards;	
+    animation: mars 10s 3.5s forwards;	
 }
 .oNama {
     grid-area: oNama;
     justify-self: left;
-    animation: mars 10s 4s forwards;	
+    animation: mars 10s 3s forwards;	
 }
 .prijaviSe {
     grid-area: prijaviSe;
     padding-top: 2rem;
     justify-self: center;
-    animation: mars 10s 3s forwards;	
+    animation: mars 10s 2.5s forwards;	
 }
 @keyframes mars {
     0%   {opacity:0}
@@ -75,7 +85,7 @@ body{
     justify-self: center;
     align-self: center;
     opacity: 0;
-    animation: mars 10s 6s forwards;	   
+    animation: mars 10s 1s forwards;	   
 }
 .stars, .twinkling{
     position:absolute;
@@ -115,7 +125,7 @@ img:hover {
         "oNama"
         "prijaviSe"  ;     
     }
-    .link  {
+    .linkovi  {
         justify-self: center;
         align-items: center;
     } 

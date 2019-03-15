@@ -1,7 +1,7 @@
 # Pohod_na_Mars
 Pohod na Mars - zavrsni projekat
 
-Projekat predstavlja optimistican prikaz najvaznije misije u isoriji covecansta te nadu za buduce generacije - pohod i zivot na Marsu.
+Projekat predstavlja optimistican prikaz najvaznije misije u istoriji covecansta te nadu za buduce generacije - pohod i zivot na Marsu.
 
 Tehnologije koje su koriscenje pri izradi:
 

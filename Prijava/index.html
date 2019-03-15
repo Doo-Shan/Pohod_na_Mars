@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prijavi se</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body onload = "dodajKandidata()">
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">Prijava</h3>
+        </div>
+        <div class="jumbotron">
+            <h2>Prijavi se za Misiju</h2>
+            <form id="forma">
+                <div class="form-group">
+                    <label for="ime">Ime i prezime</label>
+                    <input type="text" class="form-control" id="ime" placeholder="Unesite Vaše ime i prezime">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Unesite Vaš email">
+                </div>
+                <div class="form-group">
+                    <label for="rodj">Godina rođenja</label>
+                    <input type="number" class="form-control" id="rodj" placeholder="Unesite godinu rođenja">
+                </div>
+                <div class="form-group">
+                    <label for="poruka">Pišite nam</label>
+                    <textarea class="form-control" rows="3" id="poruka" placeholder="Ovde nam možete pisati..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">potvrdi</button>
+            </form>
+        </div>
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <h5>Već prijavljeni kandidati:</h5>
+                <div id="kandidatiLista"></div>     
+            </div>
+        </div>
+       
+        <footer class="footer">
+            <p>&copy; 2019 Misija na Mars, Inc.</p>
+        </footer>
+    </div> 
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

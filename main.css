@@ -2,19 +2,14 @@ body{
     margin: 0;
     color: white;
 }
-
 #container{
     display: grid;
     row-gap: 1rem;
-    /* height: 100vh; */
-    /* grid-template-columns: 1fr 250px 250px 1fr;  */
     grid-template-areas: 
-        "mars       mars        mars"
-        "oMarsu     slika        izazovi"
-        "galerija   slika        oNama"
-        "prijaviSe  prijaviSe    prijaviSe" ;
-   
-    /* grid-template-columns: repeat(auto-fit, minmax(350px,1fr)); */
+        "mars       mars          mars"
+        "oMarsu     slika         prijaviSe"
+        "oMarsu     slika         prijaviSe"
+        "galerija   galerija      galerija" ;
  }
 
  #mars {
@@ -54,23 +49,13 @@ a:hover, a:active {
 
 .galerija {
     grid-area: galerija;
-    justify-self: right;
+    justify-self: center;
     animation: mars 10s 2s forwards;	
-}
-.izazovi {
-    grid-area: izazovi;
-    justify-self: left;
-    animation: mars 10s 3.5s forwards;	
-}
-.oNama {
-    grid-area: oNama;
-    justify-self: left;
-    animation: mars 10s 3s forwards;	
 }
 .prijaviSe {
     grid-area: prijaviSe;
     padding-top: 2rem;
-    justify-self: center;
+    justify-self: left;
     animation: mars 10s 2.5s forwards;	
 }
 @keyframes mars {
@@ -81,7 +66,6 @@ a:hover, a:active {
 #slika {
     grid-area: slika;
     max-width: 50%;
-    /* height: auto; */
     justify-self: center;
     align-self: center;
     opacity: 0;
@@ -101,12 +85,12 @@ a:hover, a:active {
 .twinkling{
     background: url(img/twinkling.png);
     z-index:-1;
-    animation: treptanje 300s linear;
+    animation: twinkling 300s linear;
 }
-/* @keyframes treptanje {
+@keyframes twinkling {
       0% {background-position:0 0;}
       100% {background-position:-5000px 1000px;}
-  } */
+  }
 img{
     transition: transform 2s ease-in-out;
 }  
@@ -121,8 +105,6 @@ img:hover {
         "slika"
         "oMarsu"
         "galerija"
-        "izazovi"
-        "oNama"
         "prijaviSe"  ;     
     }
     .linkovi  {

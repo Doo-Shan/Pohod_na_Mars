@@ -37,12 +37,6 @@ a:hover {
   font-weight: 200;
   padding: 1rem;
 }
-
-.naslovna > article > a {
-  padding: 1rem;
-  margin-top: .75rem;
-}
-
 .clanci {
   padding: 2rem;
 }
@@ -90,13 +84,6 @@ a:hover {
   padding: 1rem .75rem;
   color: #cacaca;
 }
-
-.clanci > ul > li > a {
-  padding: .5rem 1rem;
-  margin: .5rem;
-}
-
-
 footer {
   background-color: #333;
   padding: .75rem;

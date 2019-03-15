@@ -45,7 +45,6 @@ html, body {
 #glavna {
     filter: blur(0);
 }
-/*navigacija */
 .icon-bar {
     position: fixed;
     top: 50%;
